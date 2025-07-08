@@ -1,0 +1,22 @@
+{
+  "components": {
+    "php": {
+      "enabled": true,
+      "version": "8.3",
+      "extensions": ["redis", "mbstring", "xml", "curl", "mysql"],
+      "config": {
+        "memory_limit": "256M",
+        "max_execution_time": 300,
+        "post_max_size": "50M",
+        "upload_max_filesize": "50M"
+      },
+      "xampp_path": "C:\\xampp\\php",
+      "chocolatey_path": "C:\\tools\\php83"
+    }
+  },
+  "paths": {
+    "project_root": "c:\\Users\\Public\\dev--path\\v3--dev\\poc--nix",
+    "scripts_dir": "c:\\Users\\Public\\dev--path\\v3--dev\\poc--nix\\new-version2\\scripts",
+    "logs_dir": "c:\\Users\\Public\\dev--path\\v3--dev\\poc--nix\\new-version2\\logs"
+  }
+}

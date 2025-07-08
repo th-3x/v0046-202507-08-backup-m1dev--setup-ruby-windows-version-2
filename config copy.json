@@ -1,0 +1,47 @@
+{
+  "components": {
+    "php": {
+      "enabled": true,
+      "version": "8.3",
+      "extensions": ["redis", "mbstring", "xml", "curl", "mysql"],
+      "config": {
+        "memory_limit": "256M",
+        "max_execution_time": 300,
+        "post_max_size": "50M",
+        "upload_max_filesize": "50M"
+      },
+      "xampp_path": "C:\\xampp\\php",
+      "chocolatey_path": "C:\\tools\\php83"
+    },
+    "redis": {
+      "enabled": true,
+      "port": 6379,
+      "max_memory": "256mb",
+      "max_memory_policy": "allkeys-lru",
+      "persistence": true,
+      "install_dir": "C:\\Redis"
+    },
+    "mariadb": {
+      "enabled": true,
+      "port": 3306,
+      "root_password": "",
+      "database_name": "laravel_db",
+      "user": "laravel_user",
+      "password": "laravel_password"
+    },
+    "laravel": {
+      "enabled": true,
+      "version": "^12.0",
+      "project_name": "laravel-redis-mariadb",
+      "cache_driver": "redis",
+      "database_driver": "mysql",
+      "redis_client": "predis",
+      "create_api": true
+    }
+  },
+  "paths": {
+    "project_root": "c:\\Users\\Public\\dev--path\\v3--dev\\poc--nix",
+    "scripts_dir": "c:\\Users\\Public\\dev--path\\v3--dev\\poc--nix\\new-version2\\scripts",
+    "logs_dir": "c:\\Users\\Public\\dev--path\\v3--dev\\poc--nix\\new-version2\\logs"
+  }
+}
